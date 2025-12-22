@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DESTINATION_PLACEHOLDER</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .hero {
+            height: 250px;
+            background-image: linear-gradient(to bottom, #4CAF50, #3e8e41);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+        }
+        
+        .hero h1 {
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+        
+        .hero p {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+        
+        .card-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 20px;
+            padding: 20px;
+        }
+        
+        @media only screen and (min-width: 768px) {
+            .card-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        
+        @media only screen and (min-width: 1200px) {
+            .card-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+        
+        .card {
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        
+        .card img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+            border-radius: 10px 10px 0 0;
+        }
+        
+        .map {
+            height: 520px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            margin: 20px auto;
+        }
+        
+        .map iframe {
+            width: 100%;
+            height: 100%;
+        }
+        
+        .more-attractions {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+            padding: 20px;
+        }
+        
+        .more-attractions .card {
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 10px;
+            box-shadow: 0 0 5px rgba(0,0,0,0.1);
+        }
+        
+        .more-attractions .card h3 {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+        
+        .more-attractions .card p {
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="hero">
+            <h1>DESTINATION_PLACEHOLDER</h1>
+            <p>Explore the beauty of DESTINATION_PLACEHOLDER</p>
+        </div>
+    </header>
+    <main>
+        <section class="card-grid">
+            <div class="card">
+                <img referrerpolicy="no-referrer"  src="https://images.unsplash.com/photo-1499856871958-5b9627545d1a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDY4NDN8MHwxfHNlYXJjaHwxfHxQYXJpc3xlbnwwfDB8fHwxNzY2NDEzMDM1fDA&ixlib=rb-4.1.0&q=80&w=1080" loading="lazy" alt="Beach">
+                <h2>Beach Getaway</h2>
+                <p>Relax on the pristine beaches of DESTINATION_PLACEHOLDER</p>
+            </div>
+            <div class="card">
+                <img referrerpolicy="no-referrer"  src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDY4NDN8MHwxfHNlYXJjaHwyfHxQYXJpc3xlbnwwfDB8fHwxNzY2NDEzMDM1fDA&ixlib=rb-4.1.0&q=80&w=1080" loading="lazy" alt="Mountains">
+                <h2>Mountain Adventure</h2>
+                <p>Explore the rugged terrain and breathtaking views of DESTINATION_PLACEHOLDER</p>
+            </div>
+            <div class="card">
+                <img referrerpolicy="no-referrer"  src="https://images.unsplash.com/photo-1550340499-a6c60fc8287c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDY4NDN8MHwxfHNlYXJjaHwzfHxQYXJpc3xlbnwwfDB8fHwxNzY2NDEzMDM1fDA&ixlib=rb-4.1.0&q=80&w=1080" loading="lazy" alt="Waterfall">
+                <h2>Waterfall Trek</h2>
+                <p>Hike through the lush forests and discover the hidden waterfalls of DESTINATION_PLACEHOLDER</p>
+            </div>
+        </section>
+        <section class="map">
+            <iframe src="https://www.google.com/maps?q=DESTINATION_PLACEHOLDER&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+        </section>
+        <section class="more-attractions">
+            <div class="card">
+                <h3>Historical Landmark</h3>
+                <p>Discover the rich history and cultural significance of DESTINATION_PLACEHOLDER</p>
+            </div>
+            <div class="card">
+                <h3>Nature Reserve</h3>
+                <p>Explore the diverse wildlife and ecosystems of DESTINATION_PLACEHOLDER</p>
+            </div>
+            <div class="card">
+                <h3>Culinary Delights</h3>
+                <p>Indulge in the local cuisine and flavors of DESTINATION_PLACEHOLDER</p>
+            </div>
+            <div class="card">
+                <h3>Adventure Sports</h3>
+                <p>Get your adrenaline pumping with the various adventure sports available in DESTINATION_PLACEHOLDER</p>
+            </div>
+            <div class="card">
+                <h3>Local Markets</h3>
+                <p>Experience the vibrant culture and shopping scene of DESTINATION_PLACEHOLDER</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 DESTINATION_PLACEHOLDER</p>
+    </footer>
+</body>
+</html>
