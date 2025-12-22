@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paris Travel Guide</title>
+    <style>
+        /* Hero Section */
+        .hero {
+            background-image: linear-gradient(to bottom, #333, #555);
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 18px;
+            margin-bottom: 40px;
+        }
+
+        /* Cards Section */
+        .cards {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .card {
+            background-color: #fff;
+            margin: 20px;
+            padding: 20px;
+            width: calc(33.33% - 20px);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .card h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .card img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 10px 10px 0 0;
+        }
+
+        /* Map Section */
+        .map {
+            height: 400px;
+        }
+
+        .map iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        a {
+            text-decoration: none;
+            color: #007bff;
+        }
+
+        a:hover {
+            color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <header class="hero">
+        <h1>Discover the City of Love</h1>
+        <p>Paris, the capital of France, is famous for its stunning architecture, art museums, and fashion industry. Explore the city's rich history and culture.</p>
+    </header>
+    <main>
+        <section class="cards">
+            <div class="card">
+                <h2>Eiffel Tower</h2>
+                <p>Visit the iconic Eiffel Tower, a symbol of Paris and one of the most recognizable landmarks in the world.</p>
+                <img src="https://source.unsplash.com/1200x800/?Paris,eiffeltower" loading="lazy" alt="Eiffel Tower">
+            </div>
+            <div class="card">
+                <h2>Louvre Museum</h2>
+                <p>Explore the world's largest art museum, home to the Mona Lisa, Venus de Milo, and many other famous works of art.</p>
+                <img src="https://source.unsplash.com/1200x800/?Paris,art" loading="lazy" alt="Louvre Museum">
+            </div>
+            <div class="card">
+                <h2 Notre Dame</h2>
+                <p>Visit the beautiful Notre Dame Cathedral, a stunning example of Gothic architecture and one of the most famous churches in the world.</p>
+                <img src="https://source.unsplash.com/1200x800/?Paris,cathedral" loading="lazy" alt="Notre Dame">
+            </div>
+        </section>
+        <section class="map">
+            <iframe src="https://www.google.com/maps?q=Paris&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" loading="lazy" allowfullscreen></iframe>
+        </section>
+        <section>
+            <h2>More Attractions:</h2>
+            <ul>
+                <li>Arc de Triomphe</li>
+                <li>Palace of Versailles</li>
+                <li>Montmartre</li>
+                <li>St. Germain-des-Prés</li>
+                <li>Champs-Élysées</li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Paris Travel Guide</p>
+    </footer>
+</body>
+</html>
