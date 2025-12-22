@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paris Travel Guide</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        .hero {
+            background-image: linear-gradient(to bottom, rgba(0,0,0,0.5), rgba(0,0,0,0.5));
+            background-size: 100% 300px;
+            background-position: 0 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+        }
+        
+        .hero h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+        
+        .hero p {
+            font-size: 24px;
+        }
+        
+        .cards {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+        
+        .card {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.2);
+            width: calc(33.33% - 20px);
+        }
+        
+        .card img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 10px 10px 0 0;
+        }
+        
+        .card h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        
+        .card p {
+            font-size: 18px;
+        }
+        
+        .map {
+            height: 400px;
+            width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.2);
+        }
+        
+        .more-attractions {
+            padding: 20px;
+            background-color: #f7f7f7;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.2);
+        }
+        
+        .more-attractions ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        
+        .more-attractions li {
+            margin-bottom: 10px;
+        }
+        
+        .more-attractions li::before {
+            content: "\2022";
+            font-size: 18px;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header class="hero">
+        <h1>Paris Travel Guide</h1>
+        <p>Discover the City of Love and Light</p>
+    </header>
+    <main>
+        <section class="cards">
+            <div class="card">
+                <img src="https://source.unsplash.com/1200x800/?Paris,EiffelTower" loading="lazy" alt="Eiffel Tower">
+                <h2>Eiffel Tower</h2>
+                <p>Experience the iconic symbol of Paris and enjoy breathtaking views from the top.</p>
+            </div>
+            <div class="card">
+                <img src="https://source.unsplash.com/1200x800/?Paris,LouvreMuseum" loading="lazy" alt="Louvre Museum">
+                <h2>Louvre Museum</h2>
+                <p>Explore one of the world's largest and most famous museums, home to the Mona Lisa.</p>
+            </div>
+            <div class="card">
+                <img src="https://source.unsplash.com/1200x800/?Paris,SeineRiver" loading="lazy" alt="Seine River">
+                <h2>Seine River</h2>
+                <p>Take a romantic boat ride along the Seine and discover the city's charming riverbanks.</p>
+            </div>
+        </section>
+        <section class="map">
+            <iframe src="https://www.google.com/maps?q=Paris&output=embed" frameborder="0" style="border:0;" allowfullscreen></iframe>
+        </section>
+        <section class="more-attractions">
+            <h2>More Attractions to Explore:</h2>
+            <ul>
+                <li>Notre-Dame Cathedral</li>
+                <li>Montmartre neighborhood</li>
+                <li>Champs-Élysées avenue</li>
+                <li>Arc de Triomphe monument</li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Paris Travel Guide. All rights reserved.</p>
+    </footer>
+</body>
+</html>
