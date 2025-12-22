@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paris Travel Guide</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+        }
+
+        .hero {
+            background-image: linear-gradient(to bottom, #333, #555);
+            background-size: 100% 300px;
+            background-position: 0% 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            transition: background-position 0.5s ease-in-out;
+        }
+
+        .hero:hover {
+            background-position: 0% 0%;
+        }
+
+        .card {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin: 20px;
+            padding: 20px;
+            width: calc(33.33% - 20px);
+        }
+
+        .card img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 10px 10px 0 0;
+        }
+
+        .map {
+            width: 100%;
+            height: 400px;
+        }
+
+        .more-attractions {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .more-attractions li {
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .more-attractions li:last-child {
+            border-bottom: none;
+        }
+    </style>
+</head>
+<body>
+    <header class="hero">
+        <h1>Paris Travel Guide</h1>
+        <p>Discover the City of Light</p>
+    </header>
+    <main>
+        <section class="cards">
+            <div class="card">
+                <h2>Notre Dame Cathedral</h2>
+                <p>A must-visit attraction, this beautiful cathedral is one of the most famous landmarks in Paris.</p>
+                <img src="https://source.unsplash.com/1200x800/?Paris,architecture" loading="lazy">
+            </div>
+            <div class="card">
+                <h2>The Louvre Museum</h2>
+                <p>One of the world's largest and most famous museums, the Louvre is home to the Mona Lisa and many other famous works of art.</p>
+                <img src="https://source.unsplash.com/1200x800/?Paris,museum" loading="lazy">
+            </div>
+            <div class="card">
+                <h2>Montmartre</h2>
+                <p>This charming neighborhood is famous for its bohemian vibe, street artists, and stunning views of the city.</p>
+                <img src="https://source.unsplash.com/1200x800/?Paris,streetart" loading="lazy">
+            </div>
+        </section>
+        <section class="map">
+            <iframe src="https://www.google.com/maps?q=Paris&output=embed" frameborder="0" width="100%" height="400" allowfullscreen></iframe>
+        </section>
+        <section class="more-attractions">
+            <h2>More Attractions</h2>
+            <ul>
+                <li>Palace of Versailles</li>
+                <li>St. Chapelle</li>
+                <li>Paris Catacombs</li>
+                <li>Montparnasse Tower</li>
+                <li>Champs-Élysées</li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Paris Travel Guide</p>
+    </footer>
+</body>
+</html>
