@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paris Travel Guide</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        
+        .hero {
+            background-image: linear-gradient(to bottom, #f7f7f7, #f7f7f7), url("https://source.unsplash.com/1200x800/?Paris,river");
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #333;
+        }
+        
+        .hero h1 {
+            font-size: 48px;
+        }
+        
+        .hero p {
+            font-size: 24px;
+        }
+        
+        .cards {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        
+        .card {
+            width: calc(33.33% - 20px);
+            margin: 10px;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .card img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 10px 10px 0 0;
+        }
+        
+        .card h2 {
+            font-size: 24px;
+            margin-top: 0;
+        }
+        
+        .card p {
+            font-size: 18px;
+        }
+        
+        .map {
+            width: 100%;
+            height: 400px;
+        }
+        
+        .map iframe {
+            width: 100%;
+            height: 100%;
+        }
+        
+        .more-attractions {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        
+        .more-attractions li {
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+        }
+        
+        .more-attractions li:last-child {
+            border-bottom: none;
+        }
+        
+        .more-attractions a {
+            text-decoration: none;
+            color: #337ab7;
+        }
+        
+        .more-attractions a:hover {
+            color: #23527c;
+        }
+    </style>
+</head>
+<body>
+    <section class="hero">
+        <h1>Paris Travel Guide</h1>
+        <p>Discover the City of Light</p>
+    </section>
+    <section class="cards">
+        <div class="card">
+            <img referrerpolicy="no-referrer"  src="https://images.unsplash.com/photo-1499856871958-5b9627545d1a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDY4NDN8MHwxfHNlYXJjaHwxfHxQYXJpc3xlbnwwfDB8fHwxNzY2NDEzMDM1fDA&ixlib=rb-4.1.0&q=80&w=1080" loading="lazy">
+            <h2>Eiffel Tower</h2>
+            <p>Take the stairs or elevator to the top for breathtaking views of the city.</p>
+        </div>
+        <div class="card">
+            <img referrerpolicy="no-referrer"  src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDY4NDN8MHwxfHNlYXJjaHwyfHxQYXJpc3xlbnwwfDB8fHwxNzY2NDEzMDM1fDA&ixlib=rb-4.1.0&q=80&w=1080" loading="lazy">
+            <h2>Louvre Museum</h2>
+            <p>See the Mona Lisa and other famous artworks from around the world.</p>
+        </div>
+        <div class="card">
+            <img referrerpolicy="no-referrer"  src="https://images.unsplash.com/photo-1550340499-a6c60fc8287c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDY4NDN8MHwxfHNlYXJjaHwzfHxQYXJpc3xlbnwwfDB8fHwxNzY2NDEzMDM1fDA&ixlib=rb-4.1.0&q=80&w=1080" loading="lazy">
+            <h2>Notre Dame Cathedral</h2>
+            <p>Admire the stunning architecture and beautiful stained glass windows.</p>
+        </div>
+    </section>
+    <section class="map">
+        <iframe src="https://www.google.com/maps?q=Paris&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+    </section>
+    <section class="more-attractions">
+        <h2>More Attractions in Paris</h2>
+        <ul>
+            <li><a href="#">Arc de Triomphe</a></li>
+            <li><a href="#">Montmartre</a></li>
+            <li><a href="#">Palace of Versailles</a></li>
+            <li><a href="#">Sainte-Chapelle</a></li>
+            <li><a href="#">Champs-Élysées</a></li>
+        </ul>
+    </section>
+    <footer>
+        <p>&copy; 2023 Paris Travel Guide</p>
+    </footer>
+    <!-- IMAGE_KEYWORDS
+    1: eiffel,tower
+    2: museum
+    3: cathedral
+    -->
+</html>
