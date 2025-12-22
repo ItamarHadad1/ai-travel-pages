@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paris Travel Guide</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        .hero {
+            position: relative;
+            height: 250px;
+            background-image: linear-gradient(to bottom, #333, #666);
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+        }
+        .hero-content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: #fff;
+            text-align: center;
+        }
+        .hero-content h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+        .hero-content p {
+            font-size: 24px;
+        }
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            padding: 20px;
+        }
+        .card {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .card img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+            object-position: center;
+            border-radius: 10px 10px 0 0;
+        }
+        .card h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        .card p {
+            font-size: 18px;
+        }
+        .map-section {
+            position: relative;
+            padding-top: 20px;
+            height: 520px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .more-attractions {
+            padding: 20px;
+        }
+        .more-attractions ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .more-attractions li {
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+        }
+        .more-attractions li:last-child {
+            border-bottom: none;
+        }
+        .more-attractions li h3 {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .more-attractions li p {
+            font-size: 16px;
+        }
+        .footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Paris Travel Guide</h1>
+            <p>Discover the City of Light</p>
+        </div>
+    </header>
+    <main>
+        <section class="cards">
+            <div class="card">
+                <img referrerpolicy="no-referrer"  src="https://images.unsplash.com/photo-1499856871958-5b9627545d1a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDY4NDN8MHwxfHNlYXJjaHwxfHxQYXJpc3xlbnwwfDB8fHwxNzY2NDEzMDM1fDA&ixlib=rb-4.1.0&q=80&w=1080" loading="lazy" alt="Eiffel Tower">
+                <h2>Eiffel Tower</h2>
+                <p>A must-visit attraction in Paris, the Eiffel Tower is a symbol of the city's engineering prowess and romance.</p>
+            </div>
+            <div class="card">
+                <img referrerpolicy="no-referrer"  src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDY4NDN8MHwxfHNlYXJjaHwyfHxQYXJpc3xlbnwwfDB8fHwxNzY2NDEzMDM1fDA&ixlib=rb-4.1.0&q=80&w=1080" loading="lazy" alt="The Louvre Museum">
+                <h2>The Louvre Museum</h2>
+                <p>One of the world's largest and most famous museums, the Louvre is home to the Mona Lisa and many other artistic treasures.</p>
+            </div>
+            <div class="card">
+                <img referrerpolicy="no-referrer"  src="https://images.unsplash.com/photo-1550340499-a6c60fc8287c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDY4NDN8MHwxfHNlYXJjaHwzfHxQYXJpc3xlbnwwfDB8fHwxNzY2NDEzMDM1fDA&ixlib=rb-4.1.0&q=80&w=1080" loading="lazy" alt="Notre Dame Cathedral">
+                <h2>Notre Dame Cathedral</h2>
+                <p>A beautiful and historic cathedral that has been a symbol of Paris for over 800 years.</p>
+            </div>
+        </section>
+        <section class="map-section">
+            <iframe src="https://www.google.com/maps?q=Paris&output=embed" height="520" frameborder="0" style="border:0;" allowfullscreen></iframe>
+        </section>
+        <section class="more-attractions">
+            <h2>More Attractions</h2>
+            <ul>
+                <li>
+                    <h3>Arc de Triomphe</h3>
+                    <p>A monumental arch that honors the soldiers who fought and died for France.</p>
+                </li>
+                <li>
+                    <h3>Palace of Versailles</h3>
+                    <p>A former royal palace with opulent decorations and gardens.</p>
+                </li>
+                <li>
+                    <h3>Montmartre</h3>
+                    <p>A historic neighborhood known for its bohemian vibe, street artists, and stunning views of the city.</p>
+                </li>
+                <li>
+                    <h3>Stade de France</h3>
+                    <p>A modern stadium that hosts sports events and concerts.</p>
+                </li>
+                <li>
+                    <h3>Grand Palais</h3>
+                    <p>A large glass and iron building that hosts art exhibitions and events.</p>
+                </li>
+            </ul>
+        </section>
+    </main>
+    <footer class="footer">
+        <p>&copy; 2023 Paris Travel Guide</p>
+    </footer>
+</body>
+</html>
