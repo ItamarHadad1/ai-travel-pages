@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Paris Travel Guide</title>
+<style>
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://source.unsplash.com/1200x800/?Paris,Romance');
+  background-size: cover;
+  background-position: center;
+  height: 280px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 18px;
+}
+
+.attractions {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 20px;
+  padding: 20px;
+  margin-bottom: 40px;
+}
+
+.attractions img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.attractions .card {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.attractions .card h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.map {
+  width: 100%;
+  height: 520px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 20px auto;
+  overflow: hidden;
+}
+
+.map iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.more-attractions {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 20px;
+  padding: 20px;
+}
+
+.more-attractions .box {
+  background-color: #f7f7f7;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 300px;
+}
+
+.more-attractions .box h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+</style>
+</head>
+<body>
+<div class="container">
+<div class="hero">
+  <h1>Paris, the City of Light</h1>
+  <p>Discover the beauty and romance of Paris, the capital of France.</p>
+</div>
+<div class="attractions">
+  <div class="card">
+    <img referrerpolicy="no-referrer"  src="https://images.unsplash.com/photo-1499856871958-5b9627545d1a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDY4NDN8MHwxfHNlYXJjaHwxfHxQYXJpc3xlbnwwfDB8fHwxNzY2NDEzMDM1fDA&ixlib=rb-4.1.0&q=80&w=1080" loading="lazy">
+    <h2>The Eiffel Tower</h2>
+    <p>A must-visit attraction in Paris, the Eiffel Tower is an iconic symbol of the city.</p>
+  </div>
+  <div class="card">
+    <img referrerpolicy="no-referrer"  src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDY4NDN8MHwxfHNlYXJjaHwyfHxQYXJpc3xlbnwwfDB8fHwxNzY2NDEzMDM1fDA&ixlib=rb-4.1.0&q=80&w=1080" loading="lazy">
+    <h2>The Louvre Museum</h2>
+    <p>Home to the Mona Lisa and many other famous artworks, the Louvre is a must-visit for art lovers.</p>
+  </div>
+  <div class="card">
+    <img referrerpolicy="no-referrer"  src="https://images.unsplash.com/photo-1550340499-a6c60fc8287c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDY4NDN8MHwxfHNlYXJjaHwzfHxQYXJpc3xlbnwwfDB8fHwxNzY2NDEzMDM1fDA&ixlib=rb-4.1.0&q=80&w=1080" loading="lazy">
+    <h2>Notre Dame Cathedral</h2>
+    <p>A beautiful and historic cathedral that has been a symbol of Paris for centuries.</p>
+  </div>
+</div>
+<div class="map">
+  <iframe src="https://www.google.com/maps?q=Paris&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" width="100%" height="100%"></iframe>
+</div>
+<div class="more-attractions">
+  <div class="box">
+    <h3>Palace of Versailles</h3>
+    <p>A former royal palace with stunning gardens and architecture.</p>
+  </div>
+  <div class="box">
+    <h3>Montmartre</h3>
+    <p>A historic and artistic neighborhood with narrow streets and charming cafes.</p>
+  </div>
+  <div class="box">
+    <h3>Champs-Élysées</h3>
+    <p>A famous avenue lined with cafes, restaurants, and shops.</p>
+  </div>
+  <div class="box">
+    <h3>Arc de Triomphe</h3>
+    <p>A monumental arch honoring the soldiers who fought and died for France.</p>
+  </div>
+  <div class="box">
+    <h3>Musée d'Orsay</h3>
+    <p>A museum showcasing an impressive collection of Impressionist and Post-Impressionist art.</p>
+  </div>
+</div>
+<footer>
+  &copy; 2023 Paris Travel Guide
+</footer>
+</div>
+<!-- IMAGE_KEYS
+card1: EiffelTower
+card2: LouvreMuseum
+card3: NotreDameCathedral
+-->
