@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>R Travel Guide</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .hero {
+            background-image: linear-gradient(to bottom, #3498db, #2980b9);
+            height: 240px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+        }
+        
+        .hero .title {
+            font-size: 48px;
+            margin-bottom: 10px;
+        }
+        
+        .hero .subtitle {
+            font-size: 18px;
+        }
+        
+        .cards {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+        
+        .card {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: calc(100% / 3);
+        }
+        
+        .card img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+            border-radius: 10px 10px 0 0;
+        }
+        
+        .map {
+            position: relative;
+            height: 520px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        .map iframe {
+            width: 100%;
+            height: 100%;
+        }
+        
+        .more-attractions {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+        }
+        
+        .more-attraction {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: calc(100% / 3);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .more-attraction .title {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+        
+        .more-attraction .description {
+            font-size: 14px;
+            color: #666;
+        }
+        
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header class="hero">
+        <h1 class="title">R Travel Guide</h1>
+        <p class="subtitle">Explore the best of R</p>
+    </header>
+    <main>
+        <section class="cards">
+            <div class="card">
+                <img referrerpolicy="no-referrer"  src="https://images.unsplash.com/photo-1697282027835-007785735652?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDY4NDN8MHwxfHNlYXJjaHwxfHxSfGVufDB8MHx8fDE3NjY0ODAwNzJ8MA&ixlib=rb-4.1.0&q=80&w=1080" loading="lazy" alt="Dracula Castle">
+                <h2>Dracula's Castle</h2>
+                <p>A must-visit attraction in R, the castle is steeped in history and mystery.</p>
+            </div>
+            <div class="card">
+                <img referrerpolicy="no-referrer"  src="https://images.unsplash.com/photo-1505583346922-f0fdd30fc060?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDY4NDN8MHwxfHNlYXJjaHwyfHxSfGVufDB8MHx8fDE3NjY0ODAwNzJ8MA&ixlib=rb-4.1.0&q=80&w=1080" loading="lazy" alt="Transfagarasan Highway">
+                <h2>Transfagarasan Highway</h2>
+                <p>This scenic highway is a driver's dream, with breathtaking views of the Carpathian Mountains.</p>
+            </div>
+            <div class="card">
+                <img referrerpolicy="no-referrer"  src="https://images.unsplash.com/photo-1547336242-5f39fce91c4b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDY4NDN8MHwxfHNlYXJjaHwzfHxSfGVufDB8MHx8fDE3NjY0ODAwNzJ8MA&ixlib=rb-4.1.0&q=80&w=1080" loading="lazy" alt="Peles Castle">
+                <h2>Peles Castle</h2>
+                <p>A stunning example of Romanian architecture, this castle is a must-see.</p>
+            </div>
+        </section>
+        <section class="map">
+            <iframe src="https://www.google.com/maps?q=R&output=embed" frameborder="0" style="border:0;" allowfullscreen></iframe>
+        </section>
+        <section class="more-attractions">
+            <div class="more-attraction">
+                <h2 class="title">Bran Castle</h2>
+                <p class="description">A Gothic-style castle with a rich history, often referred to as Dracula's Castle.</p>
+            </div>
+            <div class="more-attraction">
+                <h2 class="title">Rin Castle</h2>
+                <p class="description">A medieval fortress with a beautiful courtyard and stunning views.</p>
+            </div>
+            <div class="more-attraction">
+                <h2 class="title">Ceahlau National Park</h2>
+                <p class="description">A beautiful national park with stunning mountain scenery and hiking trails.</p>
+            </div>
+            <div class="more-attraction">
+                <h2 class="title">Maramureș County Museum</h2>
+                <p class="description">A museum showcasing the history and culture of the Maramureș region.</p>
+            </div>
+            <div class="more-attraction">
+                <h2 class="title">Târgu Mureș</h2>
+                <p class="description">A charming city with a rich history and culture, known for its thermal baths and scenic views.</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 R Travel Guide</p>
+    </footer>
+    <!-- 
+    IMAGE_KEYS
+    card1: Romania,DraculaCastle
+    card2: Romania,Transfagarasan
+    card3: Romania,PelesCastle
+    -->
+</body>
+</html>
