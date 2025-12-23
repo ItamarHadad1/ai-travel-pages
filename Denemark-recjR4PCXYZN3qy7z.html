@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discover Denmark</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        
+        .hero {
+            background-image: linear-gradient(to bottom, #ff69b4, #ff99cc);
+            height: 250px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            text-align: center;
+        }
+        
+        .hero-title {
+            font-size: 36px;
+            font-weight: bold;
+        }
+        
+        .hero-subtitle {
+            font-size: 18px;
+            color: #ccc;
+        }
+        
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            gap: 20px;
+            padding: 40px;
+        }
+        
+        .cards-desktop {
+            grid-template-columns: repeat(3, 1fr);
+        }
+        
+        .card {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        .card img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+            border-radius: 10px 10px 0 0;
+            margin: -20px -20px 0;
+        }
+        
+        .map {
+            height: 520px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin: 40px auto;
+        }
+        
+        .map iframe {
+            width: 100%;
+            height: 100%;
+        }
+        
+        .more-attractions {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 40px;
+        }
+        
+        .attraction-box {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: calc(25% - 20px);
+            max-width: 200px;
+        }
+        
+        .attraction-box h3 {
+            font-size: 18px;
+            font-weight: bold;
+        }
+        
+        .attraction-box p {
+            font-size: 14px;
+            color: #666;
+        }
+        
+        .footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        @media (min-width: 768px) {
+            .cards {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .cards-desktop {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+        
+        @media (min-width: 1200px) {
+            .cards-desktop {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="hero">
+        <h1 class="hero-title">Discover Denmark</h1>
+        <p class="hero-subtitle">Explore the land of happy people, delicious food, and stunning landscapes.</p>
+    </header>
+    <main>
+        <section class="cards">
+            <div class="card">
+                <img referrerpolicy="no-referrer"  src="https://images.unsplash.com/photo-1660580845778-6922248d1394?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDY4NDN8MHwxfHNlYXJjaHwxfHxEZW5lbWFya3xlbnwwfDB8fHwxNzY2NDgxMTQwfDA&ixlib=rb-4.1.0&q=80&w=1080" loading="lazy" alt="Lighthouse of Denmark">
+                <h2>Lighthouse of Denmark</h2>
+                <p>Experience the tranquility of the Danish coastline at this iconic lighthouse.</p>
+            </div>
+            <div class="card">
+                <img referrerpolicy="no-referrer"  src="https://images.unsplash.com/photo-1544099421-9115a9ead243?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDY4NDN8MHwxfHNlYXJjaHwyfHxEZW5lbWFya3xlbnwwfDB8fHwxNzY2NDgxMTQwfDA&ixlib=rb-4.1.0&q=80&w=1080" loading="lazy" alt="Trelleborg Castle">
+                <h2>Trelleborg Castle</h2>
+                <p>Step back in time and explore the history of Denmark at this ancient Viking fortress.</p>
+            </div>
+            <div class="card">
+                <img referrerpolicy="no-referrer"  src="https://images.unsplash.com/photo-1671879504770-a55834bc064b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDY4NDN8MHwxfHNlYXJjaHwzfHxEZW5lbWFya3xlbnwwfDB8fHwxNzY2NDgxMTQwfDA&ixlib=rb-4.1.0&q=80&w=1080" loading="lazy" alt="Great Belt East Bridge">
+                <h2>Great Belt East Bridge</h2>
+                <p>Marvel at the engineering feat of this iconic suspension bridge connecting Denmark and Sweden.</p>
+        </section>
+        <section class="map">
+            <iframe src="https://www.google.com/maps?q=Denemark&output=embed" loading="lazy" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+        </section>
+        <section class="more-attractions">
+            <div class="attraction-box">
+                <h3>Amalienborg Palace</h3>
+                <p>Witness the changing of the guard at this stunning royal palace in Copenhagen.</p>
+            </div>
+            <div class="attraction-box">
+                <h3>Nyhavn Harbour</h3>
+                <p>Stroll along the picturesque canals and enjoy the vibrant atmosphere of this historic harbour.</p>
+            </div>
+            <div class="attraction-box">
+                <h3>Rosenborg Castle</h3>
+                <p>Explore the beautiful gardens and medieval architecture of this charming royal castle.</p>
+            </div>
+            <div class="attraction-box">
+                <h3>Little Mermaid</h3>
+                <p>Visit the iconic bronze statue of Hans Christian Andersen's beloved character.</p>
+            </div>
+            <div class="attraction-box">
+                <h3>Legoland Billund</h3>
+                <p>Experience the magic of Denmark's famous theme park, perfect for families and thrill-seekers alike.</p>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <p>&copy; 2023 Discover Denmark</p>
+    </footer>
+    <!-- IMAGE_KEYS
+    card1: lighthouse
+    card2: castle
+    card3: bridge
+    -->
+</body>
+</html>
