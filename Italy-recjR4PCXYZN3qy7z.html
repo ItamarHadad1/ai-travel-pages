@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Discover Italy</title>
+	<style>
+		/* Global Styles */
+		* {
+			box-sizing: border-box;
+			margin: 0;
+			padding: 0;
+		}
+		body {
+			font-family: Arial, sans-serif;
+			line-height: 1.5;
+		}
+		.container {
+			max-width: 1200px;
+			margin: 0 auto;
+			padding: 20px;
+		}
+		
+		/* Hero Styles */
+		.hero {
+			background: linear-gradient(to bottom, #2e4053, #455a64);
+			color: #fff;
+			padding: 100px 0;
+			height: 250px;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+		}
+		.hero h1 {
+			font-size: 36px;
+			margin-bottom: 10px;
+		}
+		.hero p {
+			font-size: 18px;
+		}
+		
+		/* Card Styles */
+		.card-grid {
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
+			grid-gap: 20px;
+			margin-top: 40px;
+		}
+		.card {
+			background: #fff;
+			border-radius: 10px;
+			box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+			padding: 20px;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+		.card img {
+			width: 100%;
+			height: 220px;
+			object-fit: cover;
+			border-radius: 10px;
+		}
+		.card h2 {
+			margin-top: 10px;
+			font-size: 24px;
+		}
+		.card p {
+			font-size: 18px;
+			margin-bottom: 20px;
+		}
+		
+		/* Map Styles */
+		.map {
+			height: 520px;
+			border-radius: 10px;
+			box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+			margin-top: 40px;
+		}
+		.map iframe {
+			width: 100%;
+			height: 100%;
+			border: none;
+			border-radius: 10px;
+			overflow: hidden;
+		}
+		
+		/* More Attractions Styles */
+		.attractions {
+			margin-top: 40px;
+		}
+		.attraction {
+			background: #f7f7f7;
+			padding: 20px;
+			border-radius: 10px;
+			box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+			margin-bottom: 20px;
+		}
+		.attraction h3 {
+			margin-top: 10px;
+			font-size: 18px;
+		}
+		.attraction p {
+			font-size: 16px;
+		}
+		
+		/* Responsive Styles */
+		@media only screen and (max-width: 768px) {
+			.card-grid {
+				grid-template-columns: repeat(1, 1fr);
+			}
+		}
+		@media only screen and (max-width: 480px) {
+			.card-grid {
+				grid-template-columns: repeat(1, 1fr);
+			}
+			.card img {
+				height: 180px;
+			}
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<!-- Hero Section -->
+		<section class="hero">
+			<h1>Discover the Beauty of Italy</h1>
+			<p>From ancient ruins to stunning landscapes, Italy has something for everyone.</p>
+		</section>
+		
+		<!-- Attraction Cards -->
+		<section class="card-grid">
+			<div class="card">
+				<img referrerpolicy="no-referrer"  src="https://images.unsplash.com/photo-1520175480921-4edfa2983e0f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDY4NDN8MHwxfHNlYXJjaHwxfHxJdGFseXxlbnwwfDB8fHwxNzY2NDgwMTAyfDA&ixlib=rb-4.1.0&q=80&w=1080" loading="lazy" alt="Rome">
+				<h2>The Colosseum</h2>
+				<p>One of the most iconic landmarks in Rome, the Colosseum is a must-visit attraction.</p>
+			</div>
+			<div class="card">
+				<img referrerpolicy="no-referrer"  src="https://images.unsplash.com/photo-1499678329028-101435549a4e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDY4NDN8MHwxfHNlYXJjaHwyfHxJdGFseXxlbnwwfDB8fHwxNzY2NDgwMTAyfDA&ixlib=rb-4.1.0&q=80&w=1080" loading="lazy" alt="Florence">
+				<h2>The Uffizi Gallery</h2>
+				<p>Home to some of the world's most famous artworks, the Uffizi Gallery is a cultural treasure.</p>
+			</div>
+			<div class="card">
+				<img referrerpolicy="no-referrer"  src="https://images.unsplash.com/photo-1515859005217-8a1f08870f59?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDY4NDN8MHwxfHNlYXJjaHwzfHxJdGFseXxlbnwwfDB8fHwxNzY2NDgwMTAyfDA&ixlib=rb-4.1.0&q=80&w=1080" loading="lazy" alt="Venice">
+				<h2>The Grand Canal</h2>
+				<p>A breathtakingly beautiful canal that winds through the heart of Venice.</p>
+			</div>
+		</section>
+		
+		<!-- Map Section -->
+		<section class="map">
+			<iframe src="https://www.google.com/maps?q=Italy&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+		</section>
+		
+		<!-- More Attractions Section -->
+		<section class="attractions">
+			<div class="attraction">
+				<h3>The Leaning Tower of Pisa</h3>
+				<p>One of the most famous towers in the world, the Leaning Tower of Pisa is a must-see.</p>
+			</div>
+			<div class="attraction">
+				<h3>The Amalfi Coast</h3>
+				<p>A stunning coastline with picturesque towns and crystal-clear waters.</p>
+			</div>
+			<div class="attraction">
+				<h3>The Pantheon</h3>
+				<p>One of the most impressive ancient buildings in Rome, the Pantheon is a must-visit.</p>
+			</div>
+			<div class="attraction">
+				<h3>The Lake Como</h3>
+				<p>A beautiful lake in the northern region of Italy, perfect for a relaxing getaway.</p>
+			</div>
+			<div class="attraction">
+				<h3>The Pompeii Ruins</h3>
+				<p>A fascinating archaeological site that showcases the ancient Roman civilization.</p>
+			</div>
+		</section>
+		
+		<!-- Footer -->
+		<footer>
+			<p>&copy; 2023 Discover Italy</p>
+		</footer>
+	</div>
+
+<!-- IMAGE_KEYS
+card1: Rome
+card2: Florence
+card3: Venice
+-->
