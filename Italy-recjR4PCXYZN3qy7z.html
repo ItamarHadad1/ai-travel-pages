@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discover Italy</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            max-width: 1200px;
+            margin: 0 auto;
+            box-sizing: border-box;
+        }
+        
+        .hero {
+            background-image: linear-gradient(to bottom, #FFC67D, #F7DC6F);
+            height: 250px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #333;
+        }
+        
+        .hero .title {
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+        
+        .hero .subtitle {
+            font-size: 18px;
+        }
+        
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            gap: 20px;
+            padding: 20px;
+        }
+        
+        @media (min-width: 768px) {
+            .card-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        
+        @media (min-width: 1200px) {
+            .card-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+        
+        .card {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .card img {
+            object-fit: cover;
+            height: 220px;
+            border-radius: 10px 10px 0 0;
+        }
+        
+        .card .title {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        
+        .card .description {
+            font-size: 18px;
+            color: #666;
+        }
+        
+        .map {
+            height: 520px;
+            border-radius: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+        
+        .map iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+            border-radius: 20px;
+        }
+        
+        .more-attractions {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            gap: 20px;
+            padding: 20px;
+        }
+        
+        @media (min-width: 768px) {
+            .more-attractions {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        
+        @media (min-width: 1200px) {
+            .more-attractions {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+        
+        .more-attractions .box {
+            background-color: #f7f7f7;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .more-attractions .box .title {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        
+        .more-attractions .box .description {
+            font-size: 18px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <header class="hero">
+        <h1 class="title">Discover Italy</h1>
+        <p class="subtitle">Explore the beauty of Italy</p>
+    </header>
+    <main>
+        <section class="card-grid">
+            <div class="card">
+                <img referrerpolicy="no-referrer"  src="https://images.unsplash.com/photo-1520175480921-4edfa2983e0f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDY4NDN8MHwxfHNlYXJjaHwxfHxJdGFseXxlbnwwfDB8fHwxNzY2NDgwMTAyfDA&ixlib=rb-4.1.0&q=80&w=1080" loading="lazy" alt="Colosseum">
+                <h2 class="title">Colosseum</h2>
+                <p class="description">One of the most iconic landmarks in Rome, Italy. A must-visit for history buffs and architecture enthusiasts.</p>
+            </div>
+            <div class="card">
+                <img referrerpolicy="no-referrer"  src="https://images.unsplash.com/photo-1499678329028-101435549a4e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDY4NDN8MHwxfHNlYXJjaHwyfHxJdGFseXxlbnwwfDB8fHwxNzY2NDgwMTAyfDA&ixlib=rb-4.1.0&q=80&w=1080" loading="lazy" alt="Leaning Tower">
+                <h2 class="title">Leaning Tower of Pisa</h2>
+                <p class="description">A famous tower in Pisa, Italy, known for its unique tilt. A great spot for photography and a fun challenge to climb to the top.</p>
+            </div>
+            <div class="card">
+                <img referrerpolicy="no-referrer"  src="https://images.unsplash.com/photo-1515859005217-8a1f08870f59?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDY4NDN8MHwxfHNlYXJjaHwzfHxJdGFseXxlbnwwfDB8fHwxNzY2NDgwMTAyfDA&ixlib=rb-4.1.0&q=80&w=1080" loading="lazy" alt="Vatican Library">
+                <h2 class="title">Vatican Library</h2>
+                <p class="description">A vast library in Vatican City, Rome, containing ancient manuscripts and rare books. A haven for book lovers and history enthusiasts.</p>
+            </div>
+        </section>
+        <section class="map">
+            <iframe src="https://www.google.com/maps?q=Italy&output=embed" loading="lazy" frameborder="0"></iframe>
+        </section>
+        <section class="more-attractions">
+            <div class="box">
+                <h2 class="title">Lake Como</h2>
+                <p class="description">A stunning lake in the Lombardy region of Italy, known for its picturesque towns, beautiful villas, and breathtaking scenery.</p>
+            </div>
+            <div class="box">
+                <h2 class="title">Amalfi Coast</h2>
+                <p class="description">A scenic coastline in the Campania region of Italy, famous for its colorful towns, crystal-clear waters, and stunning cliffs.</p>
+            </div>
+            <div class="box">
+                <h2 class="title">Cinque Terre</h2>
+                <p class="description">A group of five colorful towns on the Ligurian coast of Italy, connected by hiking trails and offering breathtaking ocean views.</p>
+            </div>
+            <div class="box">
+                <h2 class="title">Tuscany Wine Region</h2>
+                <p class="description">A renowned wine region in central Italy, famous for its rolling hills, charming villages, and world-class wines.</p>
+            </div>
+            <div class="box">
+                <h2 class="title">Venice Canals</h2>
+                <p class="description">A network of canals in the Veneto region of Italy, known for its stunning architecture, romantic atmosphere, and world-class art.</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        &copy; 2023 Discover Italy
+    </footer>
+    <!-- IMAGE_KEYS
+card1: Architecture
+card2: Pisa
+card3: Vatican
+more1: Lake
+more2: Coast
+more3: Terre
+more4: Wine
+more5: Venice
+-->
+
+</html>
