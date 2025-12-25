@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>London Travel Guide</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .hero {
+            background-image: linear-gradient(to bottom, #3d3d3d, #333);
+            height: 250px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .title {
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        .cards-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        @media only screen and (min-width: 768px) {
+            .cards-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        @media only screen and (min-width: 1200px) {
+            .cards-grid {
+                grid-template-columns: 1fr 1fr 1fr;
+            }
+        }
+
+        .card {
+            background-color: #f7f7f7;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .card img {
+            object-fit: cover;
+            height: 220px;
+            border-radius: 10px 10px 0 0;
+        }
+
+        .map-container {
+            position: relative;
+            overflow: hidden;
+            height: 520px;
+            border-radius: 20px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+            margin-top: 20px;
+        }
+
+        .map-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+            border-radius: 20px;
+        }
+
+        .more-attractions {
+            margin-top: 40px;
+        }
+
+        .more-attractions-item {
+            background-color: #f7f7f7;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+
+        .more-attractions-item h3 {
+            margin-top: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="hero">
+            <h1 class="title">London Travel Guide</h1>
+            <p class="subtitle">Explore the best of London</p>
+        </div>
+        <div class="cards-grid">
+            <div class="card">
+                <img referrerpolicy="no-referrer"  src="https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDY4NDN8MHwxfHNlYXJjaHwxfHxMb25kb258ZW58MHwwfHx8MTc2NjY2NjYwNHww&ixlib=rb-4.1.0&q=80&w=1080" loading="lazy">
+                <h2>Buckingham Palace</h2>
+                <p>A must-visit attraction in London, the official residence of the British monarch.</p>
+            </div>
+            <div class="card">
+                <img referrerpolicy="no-referrer"  src="https://images.unsplash.com/photo-1486299267070-83823f5448dd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDY4NDN8MHwxfHNlYXJjaHwyfHxMb25kb258ZW58MHwwfHx8MTc2NjY2NjYwNHww&ixlib=rb-4.1.0&q=80&w=1080" loading="lazy">
+                <h2>London Eye</h2>
+                <p>A giant Ferris wheel located on the South Bank of the Thames, offering stunning views of the city.</p>
+            </div>
+            <div class="card">
+                <img referrerpolicy="no-referrer"  src="https://images.unsplash.com/photo-1533929736458-ca588d08c8be?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDY4NDN8MHwxfHNlYXJjaHwzfHxMb25kb258ZW58MHwwfHx8MTc2NjY2NjYwNHww&ixlib=rb-4.1.0&q=80&w=1080" loading="lazy">
+                <h2>Tower Bridge</h2>
+                <p>A iconic bridge located in central London, offering breathtaking views of the city and the Thames.</p>
+            </div>
+        </div>
+        <div class="map-container">
+            <iframe src="https://www.google.com/maps?q=London&output=embed" loading="lazy" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+        </div>
+        <div class="more-attractions">
+            <h2>More Attractions</h2>
+            <div class="more-attractions-item">
+                <h3>The British Museum</h3>
+                <p>One of the world's greatest museums, housing a vast collection of artifacts from ancient civilizations.</p>
+            </div>
+            <div class="more-attractions-item">
+                <h3>The National Gallery</h3>
+                <p>A world-class art museum featuring a collection of Western European art from the 13th to the 19th centuries.</p>
+            </div>
+            <div class="more-attractions-item">
+                <h3>The Natural History Museum</h3>
+                <p>A museum showcasing a vast collection of natural history specimens and artifacts, including dinosaur fossils.</p>
+            </div>
+            <div class="more-attractions-item">
+                <h3>The Tate Modern</h3>
+                <p>A museum of modern and contemporary art housed in a former power station, offering stunning views of the city.</p>
+            </div>
+            <div class="more-attractions-item">
+                <h3>The Westminster Abbey</h3>
+                <p>A historic church in the heart of London, serving as a place of worship, coronation site, and final resting place for many British monarchs.</p>
+            </div>
+        </div>
+        <footer>
+            <p>&copy; 2023 London Travel Guide</p>
+        </footer>
+    </div>
+    <!-- IMAGE_KEYS
+card1: Buckingham Palace
+card2: London Eye
+card3: Tower Bridge
+-->
+</body>
+</html>
