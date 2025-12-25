@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brazil Travel Guide</title>
+    <style>
+        /* Global Styles */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+        /* Hero Section */
+        .hero {
+            position: relative;
+            height: 250px;
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://source.unsplash.com/1200x800/?Brazil,Beach');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+        }
+        .hero h1 {
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+        .hero p {
+            font-size: 18px;
+        }
+        /* Attraction Cards */
+        .cards {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin: 40px 0;
+        }
+        .card {
+            width: calc(33.33% - 20px);
+            margin: 10px;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .card img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+            border-radius: 10px 10px 0 0;
+        }
+        .card h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        .card p {
+            font-size: 18px;
+        }
+        /* Map Section */
+        .map {
+            height: 520px;
+            width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin: 40px 0;
+        }
+        .map iframe {
+            width: 100%;
+            height: 100%;
+        }
+        /* More Attractions Section */
+        .more-attractions {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin: 40px 0;
+        }
+        .more-attraction {
+            width: calc(20% - 20px);
+            margin: 10px;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .more-attraction h3 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        .more-attraction p {
+            font-size: 18px;
+        }
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            .cards {
+                flex-direction: column;
+            }
+            .card {
+                width: 100%;
+                margin: 10px 0;
+            }
+            .more-attractions {
+                flex-direction: column;
+            }
+            .more-attraction {
+                width: 100%;
+                margin: 10px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="hero">
+        <h1>Brazil Travel Guide</h1>
+        <p>Discover the beauty and diversity of Brazil</p>
+    </header>
+    <main>
+        <section class="cards">
+            <div class="card">
+                <img referrerpolicy="no-referrer"  src="https://images.unsplash.com/photo-1483729558449-99ef09a8c325?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDY4NDN8MHwxfHNlYXJjaHwxfHxCcmF6aWx8ZW58MHwwfHx8MTc2NjY2MzU2MXww&ixlib=rb-4.1.0&q=80&w=1080" loading="lazy" alt="Christ The Redeemer">
+                <h2>Christ the Redeemer</h2>
+                <p>A iconic statue in Rio de Janeiro that offers stunning views of the city.</p>
+            </div>
+            <div class="card">
+                <img referrerpolicy="no-referrer"  src="https://images.unsplash.com/photo-1518639192441-8fce0a366e2e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDY4NDN8MHwxfHNlYXJjaHwyfHxCcmF6aWx8ZW58MHwwfHx8MTc2NjY2MzU2MXww&ixlib=rb-4.1.0&q=80&w=1080" loading="lazy" alt="Iguazu Falls">
+                <h2>Iguazu Falls</h2>
+                <p>One of the largest waterfalls in the world, located on the border of Brazil and Argentina.</p>
+            </div>
+            <div class="card">
+                <img referrerpolicy="no-referrer"  src="https://images.unsplash.com/photo-1516306580123-e6e52b1b7b5f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDY4NDN8MHwxfHNlYXJjaHwzfHxCcmF6aWx8ZW58MHwwfHx8MTc2NjY2MzU2MXww&ixlib=rb-4.1.0&q=80&w=1080" loading="lazy" alt="Amazon Rainforest">
+                <h2>Amazon Rainforest</h2>
+                <p>The largest tropical rainforest in the world, home to an incredible array of wildlife.</p>
+            </div>
+        </section>
+        <section class="map">
+            <iframe src="https://www.google.com/maps?q=Brazil&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" loading="lazy"></iframe>
+        </section>
+        <section class="more-attractions">
+            <div class="more-attraction">
+                <h3>Lençóis Maranhenses National Park</h3>
+                <p>A unique park featuring sand dunes and freshwater lagoons.</p>
+            </div>
+            <div class="more-attraction">
+                <h3>Amazon River</h3>
+                <p>The largest river in the world by discharge volume, flowing through Brazil and several other countries.</p>
+            </div>
+            <div class="more-attraction">
+                <h3>Chapada Diamantina National Park</h3>
+                <p>A park featuring stunning scenery, caves, and waterfalls.</p>
+            </div>
+            <div class="more-attraction">
+                <h3>Ilha Grande</h3>
+                <p>A beautiful island off the coast of Rio de Janeiro, known for its stunning beaches and lush forests.</p>
+            </div>
+            <div class="more-attraction">
+                <h3>Salvador</h3>
+                <p>The capital city of Bahia, known for its rich Afro-Brazilian culture and stunning colonial architecture.</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Brazil Travel Guide</p>
+    </footer>
+    <!-- IMAGE_KEYS
+card1: ChristTheRedeemer
+card2: IguazuFalls
+card3: AmazonRainforest
+-->
